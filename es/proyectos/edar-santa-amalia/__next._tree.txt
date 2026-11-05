@@ -1,7 +1,7 @@
-:HL["/nyos-web-demo/_next/static/chunks/1j2paw7kbtlv-.css","style"]
+:HL["/nyos-web-demo/_next/static/chunks/3xunwi9y19oyl.css","style"]
 :HL["/nyos-web-demo/_next/static/media/0759637e134d98b7-s.p.2028s2bhlck6k.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 4:[["children",{"s":"__PAGE__","h":160}]]
 3:[["children",{"s":{"n":"slug","t":"d","k":"edar-santa-amalia","s":[]},"h":65632,"c":"$Q4"}]]
 2:[["children",{"s":"proyectos","h":131136,"c":"$Q3"}]]
 1:[["children",{"s":{"n":"locale","t":"d","k":"es","s":[]},"h":196656,"c":"$Q2"}]]
-0:{"b":"EL2VaV9ivsSTK1K6mZHLb","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
+0:{"b":"yYF_CEflBckcdfo87802z","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
