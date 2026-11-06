@@ -1,0 +1,32 @@
+{
+  "files": [
+    "content/proyectos/edar-la-codosera.es.mdx",
+    "content/proyectos/edar-santa-amalia.es.mdx",
+    "content/proyectos/edificio-club-de-piraguismo.es.mdx",
+    "content/proyectos/gran-hotel-casino-extremadura.es.mdx",
+    "content/proyectos/ordenacion-hidrologico-ambiental-rio-guadiana.es.mdx",
+    "content/proyectos/ronda-norte-de-caceres.es.mdx",
+    "content/campanas/estudios-de-inundabilidad.es.mdx",
+    "content/campanas/proyectos-para-convocatorias-de-ayudas.es.mdx",
+    "content/campanas/revision-depuradoras-municipales.es.mdx",
+    "content/servicios/agua.es.mdx",
+    "content/servicios/arquitectura.es.mdx",
+    "content/servicios/ingenieria-civil.es.mdx",
+    "content/servicios/medio-ambiente.es.mdx",
+    "content/servicios/medios-audiovisuales.es.mdx",
+    "content/servicios/project-management.es.mdx",
+    "content/servicios/urbanismo.es.mdx",
+    "content/legal/aviso-legal.es.mdx",
+    "content/legal/cookies.es.mdx",
+    "content/legal/privacidad.es.mdx",
+    "content/cifras.json",
+    "content/empresa.json",
+    "content/faq.json",
+    "public/proyectos/edar-la-codosera.jpg",
+    "public/proyectos/edar-santa-amalia.jpg",
+    "public/proyectos/edificio-club-de-piraguismo.jpg",
+    "public/proyectos/gran-hotel-casino-extremadura.jpg",
+    "public/proyectos/ordenacion-hidrologico-ambiental-rio-guadiana.jpg",
+    "public/proyectos/ronda-norte-de-caceres.jpg"
+  ]
+}

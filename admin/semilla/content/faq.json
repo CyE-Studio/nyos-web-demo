@@ -1,0 +1,28 @@
+{
+  "preguntas": [
+    {
+      "pregunta": "¿Trabajáis con administraciones públicas y licitaciones?",
+      "respuesta": "Trabajamos para obra pública y privada. [[PENDIENTE: confirmar cómo se participa en licitaciones y si se tiene clasificación como consultora]]"
+    },
+    {
+      "pregunta": "¿En qué zona geográfica trabajáis?",
+      "respuesta": "Los proyectos publicados en esta web están en las provincias de Cáceres y Badajoz. [[PENDIENTE: confirmar si se trabaja fuera de Extremadura]]"
+    },
+    {
+      "pregunta": "¿Podéis encargaros solo de una fase, por ejemplo la dirección de obra?",
+      "respuesta": "Partimos de tres fases: soluciones previas, diseño del proyecto y construcción. El apartado «Cómo trabajamos» las desglosa en seis, con un entregable cada una. [[PENDIENTE: validar el proceso y confirmar si se puede contratar una sola fase]]"
+    },
+    {
+      "pregunta": "¿Cuánto tarda un proyecto de construcción?",
+      "respuesta": "[[PENDIENTE: respuesta sobre plazos]]"
+    },
+    {
+      "pregunta": "¿Hacéis infografías, renders o vídeos del proyecto?",
+      "respuesta": "Sí. Producimos imagen y sonido para comunicar proyectos: infografías, vídeo y renders."
+    },
+    {
+      "pregunta": "¿Cómo se calculan los honorarios?",
+      "respuesta": "[[PENDIENTE: respuesta sobre honorarios]]"
+    }
+  ]
+}

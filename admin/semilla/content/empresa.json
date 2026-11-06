@@ -1,0 +1,33 @@
+{
+  "nombreComercial": "Nyos Consulting",
+  "eslogan": "Nuevos tiempos, Nueva Ingeniería",
+  "razonSocial": "[[PENDIENTE: razón social]]",
+  "cif": "[[PENDIENTE: CIF]]",
+  "domicilio": "[[PENDIENTE: domicilio social]]",
+  "telefono": "[[PENDIENTE: teléfono]]",
+  "email": "[[PENDIENTE: email de contacto]]",
+  "horario": "[[PENDIENTE: horario de atención]]",
+  "anioConstitucion": "[[PENDIENTE: año de constitución]]",
+  "certificaciones": [
+    "[[PENDIENTE: certificaciones]]"
+  ],
+  "equipo": [
+    "[[PENDIENTE: personas del equipo que quieran aparecer]]"
+  ],
+  "redes": [
+    "[[PENDIENTE: confirmar red Facebook]]",
+    "[[PENDIENTE: confirmar red X]]",
+    "[[PENDIENTE: confirmar red Instagram]]",
+    "[[PENDIENTE: YouTube]]",
+    "[[PENDIENTE: página de empresa en LinkedIn]]"
+  ],
+  "presentacion": [
+    "Nyos Consulting reúne profesionales de ingeniería civil, arquitectura y diseño. Trabajamos para obra pública y privada.",
+    "Somos un equipo multidisciplinar. Combinamos tecnología reciente con soluciones prácticas y un uso eficiente de los recursos.",
+    "Te acompañamos en todas las fases del proyecto. Cada persona responde de su parte de la ejecución, y trabajamos en equipo para impulsar el desarrollo de las comunidades donde actuamos.",
+    "Nuestro principio rector es la calidad. La sostienen el esfuerzo, la dedicación y el entusiasmo."
+  ],
+  "politicaGestion": [
+    "[[PENDIENTE: texto de la Política de Gestión Integrada]]"
+  ]
+}

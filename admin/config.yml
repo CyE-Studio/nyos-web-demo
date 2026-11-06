@@ -1,0 +1,373 @@
+# Panel de administración de la web de Nyos Consulting (Sveltia CMS). Cómo se instala: docs/panel.md.
+#
+# Cada colección refleja un schema de lib/content/schemas.ts: los nombres de campo, las listas
+# cerradas y los textos de ayuda salen de ahí. Si cambia un schema, cambia esto.
+#
+# En la demo (scripts/build-demo.mjs) el backend se sustituye por `test-repo` y se siembra el
+# contenido actual: el panel se puede probar sin cuenta de GitHub y nada se guarda de verdad.
+
+backend:
+  name: test-repo
+
+
+# Nombres de archivo en ASCII, sin acentos: son las URL de la web.
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+# Un campo opcional vacío no se escribe: los schemas esperan que no exista, no que esté vacío.
+output:
+  omit_empty_optional_fields: true
+  yaml:
+    quote: double
+    indent_sequences: true
+
+# Archivos content/<colección>/<slug>.es.mdx: un archivo por idioma, hoy solo español.
+i18n:
+  structure: multiple_files
+  locales: [es]
+  default_locale: es
+
+media_folder: /public/proyectos
+public_folder: /proyectos
+
+collections:
+  - name: proyectos
+    label: Nuestro trabajo
+    label_singular: Obra
+    description: Cada obra tiene su ficha, su foto y su lugar en el mapa. Lo que se deje en blanco no se publica.
+    folder: /content/proyectos
+    extension: mdx
+    format: yaml-frontmatter
+    i18n: true
+    create: true
+    slug: "{{titulo}}"
+    identifier_field: titulo
+    summary: "{{titulo}} · {{municipio}}"
+    sortable_fields: [titulo, municipio, anio]
+    fields:
+      - { name: titulo, label: Título, widget: string, i18n: true, hint: "Nombre de la obra tal y como quieren que aparezca. Ej.: EDAR Santa Amalia" }
+      - { name: municipio, label: Municipio, widget: string, i18n: true }
+      - { name: provincia, label: Provincia, widget: select, i18n: true, options: [Badajoz, Cáceres] }
+      - name: coords
+        label: Coordenadas del municipio
+        widget: object
+        i18n: true
+        collapsed: auto
+        summary: "{{lat}}, {{lng}}"
+        fields:
+          - { name: lat, label: Latitud, widget: number, value_type: float, min: -90, max: 90, step: 0.0001, hint: "Ej.: 39.47" }
+          - { name: lng, label: Longitud, widget: number, value_type: float, min: -180, max: 180, step: 0.0001, hint: "Ej.: -6.37 (oeste, en negativo)" }
+          - { name: precision, label: Precisión, widget: select, default: municipio, options: [{ label: "Centro del municipio", value: municipio }, { label: "Punto exacto de la obra", value: exacta }] }
+      - name: areas
+        label: Áreas
+        widget: select
+        i18n: true
+        multiple: true
+        min: 1
+        options: &areas
+          - { label: "Ingeniería civil", value: ingenieria-civil }
+          - { label: "Agua", value: agua }
+          - { label: "Arquitectura", value: arquitectura }
+          - { label: "Urbanismo", value: urbanismo }
+          - { label: "Medio ambiente", value: medio-ambiente }
+          - { label: "Project management", value: project-management }
+          - { label: "Medios audiovisuales", value: medios-audiovisuales }
+      - { name: cliente, label: Cliente o promotor, widget: string, i18n: true, required: false, hint: "Si no se puede publicar, dejarlo en blanco." }
+      - { name: anio, label: Año, widget: number, i18n: true, required: false, value_type: int, min: 1900, max: 2100 }
+      - name: rol
+        label: Papel de Nyos
+        widget: select
+        i18n: true
+        multiple: true
+        min: 1
+        options:
+          - { label: "Proyecto", value: proyecto }
+          - { label: "Asistencia técnica", value: asistencia-tecnica }
+          - { label: "Dirección de obra", value: direccion-de-obra }
+          - { label: "Coordinación de seguridad y salud", value: coordinacion-seguridad-salud }
+          - { label: "Project management", value: project-management }
+      - name: datosClave
+        label: Datos clave
+        label_singular: Dato
+        widget: list
+        i18n: true
+        required: false
+        collapsed: auto
+        summary: "{{etiqueta}}: {{valor}} {{unidad}}"
+        hint: "Dos o tres cifras verificables: longitud, caudal, superficie, habitantes equivalentes…"
+        fields:
+          - { name: etiqueta, label: Qué se mide, widget: string, hint: "Ej.: Caudal" }
+          - { name: valor, label: Valor, widget: string, hint: "Ej.: 1200" }
+          - { name: unidad, label: Unidad, widget: string, required: false, hint: "Ej.: m³/día" }
+      - name: portada
+        label: Portada
+        widget: object
+        i18n: true
+        typeKey: tipo
+        types:
+          - name: foto
+            label: Foto
+            summary: "{{alt}}"
+            fields: &imagen
+              - { name: src, label: Imagen, widget: image, hint: "Horizontal, al menos 1600 px de ancho y sin marca de agua." }
+              - { name: alt, label: Descripción de la imagen, widget: string, hint: "Qué se ve, para quien no puede verla. Ej.: Decantador circular de la EDAR con el puente barredor azul" }
+          - name: render
+            label: Render
+            summary: "{{alt}}"
+            fields: *imagen
+          - name: esquema
+            label: Solo el esquema dibujado
+      - name: galeria
+        label: Galería
+        label_singular: Imagen
+        widget: list
+        i18n: true
+        required: false
+        collapsed: auto
+        summary: "{{alt}}"
+        fields:
+          - { name: src, label: Imagen, widget: image }
+          - { name: alt, label: Descripción de la imagen, widget: string }
+          - { name: tipo, label: Tipo, widget: select, default: foto, options: [{ label: Foto, value: foto }, { label: Render, value: render }] }
+      - name: planoSvg
+        label: Esquema dibujado
+        widget: select
+        i18n: true
+        required: false
+        hint: "Solo para las obras que tienen dibujo propio. Las nuevas se dejan en blanco."
+        options:
+          - { label: "Ronda Norte de Cáceres", value: ronda-norte }
+          - { label: "EDAR La Codosera", value: edar-la-codosera }
+          - { label: "Club de Piragüismo", value: club-piraguismo }
+          - { label: "Río Guadiana", value: rio-guadiana }
+          - { label: "EDAR Santa Amalia", value: edar-santa-amalia }
+          - { label: "Gran Hotel Casino", value: gran-hotel-casino }
+      - { name: planoConfirmado, label: El dibujo es el plano real, widget: boolean, i18n: true, default: false, hint: "Solo si Nyos ha entregado la geometría y el dibujo la reproduce." }
+      - { name: destacado, label: Destacada en la portada, widget: boolean, i18n: true, default: false }
+      - name: seo
+        label: Buscadores
+        widget: object
+        i18n: true
+        collapsed: auto
+        fields:
+          - { name: title, label: Título en Google, widget: string, pattern: ["^.{1,60}$", "Como mucho 60 caracteres"], hint: "Ej.: EDAR Santa Amalia, Badajoz | Nyos Consulting" }
+          - { name: description, label: Descripción en Google, widget: text, pattern: ["^.{140,160}$", "Entre 140 y 160 caracteres"] }
+      - { name: body, label: Texto de la ficha, widget: markdown, i18n: true, hint: "Apartados habituales: Proyecto, Reto, Solución y Rol de Nyos." }
+
+  - name: campanas
+    label: Campañas
+    label_singular: Campaña
+    description: Acciones comerciales con plazo. Al terminar el plazo pasan solas a «Finalizadas».
+    folder: /content/campanas
+    extension: mdx
+    format: yaml-frontmatter
+    i18n: true
+    create: true
+    slug: "{{titulo}}"
+    identifier_field: titulo
+    summary: "{{titulo}} · hasta {{fin}}"
+    media_folder: /public/campanas
+    public_folder: /campanas
+    fields:
+      - { name: titulo, label: Título, widget: string, i18n: true }
+      - { name: resumen, label: Resumen, widget: text, i18n: true, hint: "Dos frases: qué se ofrece y para qué sirve." }
+      - { name: inicio, label: Empieza el, widget: datetime, i18n: true, type: date }
+      - { name: fin, label: Termina el, widget: datetime, i18n: true, type: date }
+      - { name: paraQuien, label: A quién va dirigida, widget: list, i18n: true, min: 1, field: { name: perfil, label: Perfil, widget: string }, hint: "Ej.: Ayuntamientos y mancomunidades" }
+      - { name: areas, label: Áreas, widget: select, i18n: true, multiple: true, min: 1, options: *areas }
+      - name: imagen
+        label: Imagen
+        widget: object
+        i18n: true
+        required: false
+        collapsed: auto
+        fields:
+          - { name: src, label: Imagen, widget: image }
+          - { name: alt, label: Descripción de la imagen, widget: string }
+          - { name: tipo, label: Tipo, widget: select, default: foto, options: [{ label: Foto, value: foto }, { label: Render, value: render }] }
+      - { name: ejemplo, label: Es un ejemplo de la demo, widget: boolean, i18n: true, default: false, hint: "Marcado, no se publica en la web real." }
+      - name: seo
+        label: Buscadores
+        widget: object
+        i18n: true
+        collapsed: auto
+        fields:
+          - { name: title, label: Título en Google, widget: string, pattern: ["^.{1,60}$", "Como mucho 60 caracteres"] }
+          - { name: description, label: Descripción en Google, widget: text, pattern: ["^.{140,160}$", "Entre 140 y 160 caracteres"] }
+      - { name: body, label: Texto de la campaña, widget: markdown, i18n: true, hint: "Qué incluye y cómo se pide." }
+
+  - name: noticias
+    label: Noticias
+    label_singular: Noticia
+    description: Sin noticias, el apartado no aparece en la web.
+    folder: /content/noticias
+    extension: mdx
+    format: yaml-frontmatter
+    i18n: true
+    create: true
+    slug: "{{titulo}}"
+    identifier_field: titulo
+    summary: "{{fecha}} · {{titulo}}"
+    sortable_fields: [fecha, titulo]
+    media_folder: /public/noticias
+    public_folder: /noticias
+    fields:
+      - { name: titulo, label: Título, widget: string, i18n: true }
+      - { name: fecha, label: Fecha, widget: datetime, i18n: true, type: date }
+      - { name: resumen, label: Resumen, widget: text, i18n: true }
+      - name: imagen
+        label: Imagen
+        widget: object
+        i18n: true
+        required: false
+        collapsed: auto
+        fields:
+          - { name: src, label: Imagen, widget: image }
+          - { name: alt, label: Descripción de la imagen, widget: string }
+          - { name: tipo, label: Tipo, widget: select, default: foto, options: [{ label: Foto, value: foto }, { label: Render, value: render }] }
+      - name: seo
+        label: Buscadores
+        widget: object
+        i18n: true
+        collapsed: auto
+        fields:
+          - { name: title, label: Título en Google, widget: string, pattern: ["^.{1,60}$", "Como mucho 60 caracteres"] }
+          - { name: description, label: Descripción en Google, widget: text, pattern: ["^.{140,160}$", "Entre 140 y 160 caracteres"] }
+      - { name: body, label: Texto de la noticia, widget: markdown, i18n: true }
+
+  - name: servicios
+    label: Servicios
+    label_singular: Servicio
+    description: Las siete áreas. No se crean ni se borran desde aquí; sí se editan sus textos.
+    folder: /content/servicios
+    extension: mdx
+    format: yaml-frontmatter
+    i18n: true
+    create: false
+    delete: false
+    summary: "{{orden}}. {{titulo}}"
+    sortable_fields: [orden]
+    fields:
+      - { name: orden, label: Orden, widget: number, i18n: true, value_type: int, min: 1, max: 20 }
+      - { name: titulo, label: Título, widget: string, i18n: true }
+      - { name: resumen, label: Resumen, widget: text, i18n: true }
+      - { name: icono, label: Icono, widget: select, i18n: true, options: *areas, hint: "No cambiar: es el dibujo del servicio." }
+      - { name: prestaciones, label: Qué incluye, widget: list, i18n: true, min: 1, field: { name: prestacion, label: Prestación, widget: string } }
+      - { name: paraQuien, label: Perfiles habituales, widget: list, i18n: true, min: 1, field: { name: perfil, label: Perfil, widget: string } }
+      - name: faq
+        label: Preguntas frecuentes del servicio
+        label_singular: Pregunta
+        widget: list
+        i18n: true
+        required: false
+        collapsed: auto
+        summary: "{{pregunta}}"
+        fields:
+          - { name: pregunta, label: Pregunta, widget: string }
+          - { name: respuesta, label: Respuesta, widget: text }
+      - { name: proyectosRelacionados, label: Obras destacadas (por orden), widget: relation, i18n: true, required: false, multiple: true, collection: proyectos, value_field: "{{slug}}", display_fields: ["{{titulo}}"], search_fields: [titulo, municipio], hint: "En blanco, salen todas las obras del área." }
+      - name: seo
+        label: Buscadores
+        widget: object
+        i18n: true
+        collapsed: auto
+        fields:
+          - { name: title, label: Título en Google, widget: string, pattern: ["^.{1,60}$", "Como mucho 60 caracteres"] }
+          - { name: description, label: Descripción en Google, widget: text, pattern: ["^.{140,160}$", "Entre 140 y 160 caracteres"] }
+      - { name: body, label: Texto del servicio, widget: markdown, i18n: true }
+
+  - name: legal
+    label: Textos legales
+    label_singular: Texto legal
+    folder: /content/legal
+    extension: mdx
+    format: yaml-frontmatter
+    i18n: true
+    create: false
+    delete: false
+    fields:
+      - { name: titulo, label: Título, widget: string, i18n: true }
+      - name: seo
+        label: Buscadores
+        widget: object
+        i18n: true
+        collapsed: auto
+        fields:
+          - { name: title, label: Título en Google, widget: string, pattern: ["^.{1,60}$", "Como mucho 60 caracteres"] }
+          - { name: description, label: Descripción en Google, widget: text, pattern: ["^.{140,160}$", "Entre 140 y 160 caracteres"] }
+      - { name: body, label: Texto, widget: markdown, i18n: true }
+
+  - name: datos
+    label: Datos de la empresa
+    description: Ficha societaria, cifras y preguntas frecuentes generales.
+    files:
+      - name: empresa
+        label: Empresa
+        file: /content/empresa.json
+        fields:
+          - { name: nombreComercial, label: Nombre comercial, widget: string }
+          - { name: eslogan, label: Eslogan, widget: string }
+          - { name: razonSocial, label: Razón social, widget: string }
+          - { name: cif, label: CIF, widget: string }
+          - { name: domicilio, label: Domicilio social, widget: string }
+          - { name: telefono, label: Teléfono, widget: string }
+          - { name: email, label: Correo de contacto, widget: string }
+          - { name: horario, label: Horario de atención, widget: string, required: false, hint: "En blanco, la fila no aparece." }
+          - { name: anioConstitucion, label: Año de constitución, widget: number, value_type: int, min: 1900, max: 2100 }
+          - { name: certificaciones, label: Certificaciones, widget: list, required: false, field: { name: certificacion, label: Certificación, widget: string }, hint: "Ej.: ISO 9001. En blanco, el bloque no aparece." }
+          - name: equipo
+            label: Equipo
+            label_singular: Persona
+            widget: list
+            required: false
+            collapsed: auto
+            summary: "{{nombre}} · {{cargo}}"
+            fields:
+              - { name: nombre, label: Nombre, widget: string }
+              - { name: cargo, label: Cargo, widget: string }
+          - name: redes
+            label: Redes sociales
+            label_singular: Red
+            widget: list
+            required: false
+            collapsed: auto
+            summary: "{{red}}"
+            fields:
+              - { name: red, label: Red, widget: string, hint: "Ej.: LinkedIn" }
+              - { name: url, label: Dirección, widget: string, pattern: ["^https://", "Tiene que empezar por https://"] }
+          - { name: presentacion, label: Quiénes somos, widget: list, min: 1, field: { name: parrafo, label: Párrafo, widget: text } }
+          - { name: politicaGestion, label: Política de Gestión Integrada, widget: list, min: 1, field: { name: parrafo, label: Párrafo, widget: text } }
+      - name: cifras
+        label: Cifras
+        file: /content/cifras.json
+        fields:
+          - name: cifras
+            label: Cifras de la portada
+            label_singular: Cifra
+            widget: list
+            required: false
+            collapsed: auto
+            summary: "{{valor}} {{unidad}} · {{etiqueta}}"
+            hint: "Solo cifras verificables. Sin ninguna, la sección no aparece."
+            fields:
+              - { name: valor, label: Valor, widget: number, value_type: float }
+              - { name: decimales, label: Decimales, widget: number, required: false, value_type: int, min: 0, max: 3 }
+              - { name: unidad, label: Unidad, widget: string, required: false, hint: "Ej.: km" }
+              - { name: etiqueta, label: Qué es, widget: string, hint: "Ej.: de carreteras proyectadas" }
+              - { name: fuente, label: De dónde sale, widget: string, hint: "No se publica: es para poder justificarla." }
+      - name: faq
+        label: Preguntas frecuentes
+        file: /content/faq.json
+        fields:
+          - name: preguntas
+            label: Preguntas
+            label_singular: Pregunta
+            widget: list
+            required: false
+            collapsed: auto
+            summary: "{{pregunta}}"
+            fields:
+              - { name: pregunta, label: Pregunta, widget: string }
+              - { name: respuesta, label: Respuesta, widget: text }
