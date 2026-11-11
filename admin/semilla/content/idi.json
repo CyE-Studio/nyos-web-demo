@@ -1,0 +1,19 @@
+{
+  "presentacion": [
+    "NYOS impulsa líneas de investigación aplicada y transferencia tecnológica en colaboración con la Universidad de Extremadura, especialmente en cálculo estructural, modelización numérica, interacción suelo-estructura, instrumentación y validación experimental.",
+    "El objetivo es trasladar el conocimiento generado a herramientas, procedimientos y soluciones aplicables a infraestructuras reales."
+  ],
+  "lineas": [
+    "Modelos 2D y 3D",
+    "Verificación y validación numérica",
+    "Instrumentación y sensores",
+    "Ensayos a escala",
+    "Protocolos de auscultación",
+    "Desarrollo de herramientas internas",
+    "Transferencia a proyectos reales"
+  ],
+  "areasRelacionadas": [
+    "calculo-de-estructuras",
+    "auscultacion-y-monitorizacion"
+  ]
+}

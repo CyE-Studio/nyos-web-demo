@@ -1,0 +1,28 @@
+{
+  "preguntas": [
+    {
+      "pregunta": "Do you work with public authorities and public tenders?",
+      "respuesta": "We work on public and private works. [[PENDIENTE: confirmar cómo se participa en licitaciones y si se tiene clasificación como consultora]]"
+    },
+    {
+      "pregunta": "Which geographical area do you work in?",
+      "respuesta": "The projects published on this website are in the provinces of Cáceres and Badajoz. [[PENDIENTE: confirmar si se trabaja fuera de Extremadura]]"
+    },
+    {
+      "pregunta": "Can you take on a single stage only, such as site supervision?",
+      "respuesta": "We start from three stages: preliminary solutions, project design and construction. The “How we work” section breaks them down into six, each with a deliverable. [[PENDIENTE: validar el proceso y confirmar si se puede contratar una sola fase]]"
+    },
+    {
+      "pregunta": "How long does a detailed design take?",
+      "respuesta": "[[PENDIENTE: respuesta sobre plazos]]"
+    },
+    {
+      "pregunta": "Do you produce infographics, renders or videos of the project?",
+      "respuesta": "Yes. We produce image and sound to communicate projects: infographics, video and renders."
+    },
+    {
+      "pregunta": "How are fees calculated?",
+      "respuesta": "[[PENDIENTE: respuesta sobre honorarios]]"
+    }
+  ]
+}

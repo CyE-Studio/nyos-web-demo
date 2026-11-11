@@ -1,0 +1,52 @@
+{
+  "capacidades": [
+    {
+      "clave": "dron",
+      "titulo": "Aerial inspection and data capture by drone",
+      "texto": "NYOS uses unmanned aerial systems as a tool to support engineering, inspection and the monitoring of infrastructure and works. They make it possible to document areas that are difficult to access, obtain visual information on the condition and progress of the works, and complement inspection, control and technical diagnosis tasks.",
+      "aplicacion": [
+        "Railways",
+        "Roads",
+        "Water",
+        "Urban planning",
+        "Technical assistance",
+        "Structures",
+        "Monitoring"
+      ]
+    },
+    {
+      "clave": "gis",
+      "titulo": "GIS and territorial analysis",
+      "texto": "Management, representation and analysis of geographic information to support the study of the territory, the planning of works, project documentation and the monitoring of infrastructure.",
+      "aplicacion": [
+        "Urban planning",
+        "Projects",
+        "Territorial studies",
+        "Environment",
+        "Inventories",
+        "Works monitoring"
+      ]
+    },
+    {
+      "clave": "modelizacion-3d",
+      "titulo": "3D modelling and visualisation",
+      "texto": "Creation and processing of three-dimensional models and representations to improve the technical understanding of solutions, support design and make projects and works easier to communicate.",
+      "aplicacion": [
+        "Projects",
+        "Structures",
+        "Infrastructure",
+        "Technical presentation"
+      ]
+    },
+    {
+      "clave": "fotografia-tecnica",
+      "titulo": "Technical photography and documentary record of works",
+      "texto": "Orderly graphic documentation of works, progress, incidents and singular elements to support technical assistance, site supervision and reports.",
+      "aplicacion": [
+        "Technical assistance",
+        "Site supervision",
+        "Control and monitoring"
+      ]
+    }
+  ]
+}

@@ -1,75 +1,339 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/es/areas/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/proyectos/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/proyectos/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/es/idi/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/idi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/idi/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/idi/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/empresa/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/empresa/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/empresa/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/empresa/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/contacto/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/contacto/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/contacto/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/contacto/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/legal/aviso-legal/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/legal/aviso-legal/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/legal/aviso-legal/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/legal/aviso-legal/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/legal/privacidad/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/legal/privacidad/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/legal/privacidad/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/legal/privacidad/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/legal/cookies/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/legal/cookies/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/legal/cookies/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/legal/cookies/" />
 </url>
 <url>
-<loc>https://cye-studio.github.io/nyos-web-demo/es/servicios/ingenieria-civil/</loc>
+<loc>https://cye-studio.github.io/nyos-web-demo/es/areas/infraestructura-ferroviaria/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/infraestructura-ferroviaria/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/infraestructura-ferroviaria/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/infraestructura-ferroviaria/" />
 </url>
 <url>
-<loc>https://cye-studio.github.io/nyos-web-demo/es/servicios/agua/</loc>
+<loc>https://cye-studio.github.io/nyos-web-demo/es/areas/carreteras/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/carreteras/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/carreteras/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/carreteras/" />
 </url>
 <url>
-<loc>https://cye-studio.github.io/nyos-web-demo/es/servicios/arquitectura/</loc>
+<loc>https://cye-studio.github.io/nyos-web-demo/es/areas/agua-y-medio-ambiente/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/agua-y-medio-ambiente/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/agua-y-medio-ambiente/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/agua-y-medio-ambiente/" />
 </url>
 <url>
-<loc>https://cye-studio.github.io/nyos-web-demo/es/servicios/urbanismo/</loc>
+<loc>https://cye-studio.github.io/nyos-web-demo/es/areas/urbanismo-y-ordenacion-del-territorio/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/urbanismo-y-ordenacion-del-territorio/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/urbanismo-y-ordenacion-del-territorio/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/urbanismo-y-ordenacion-del-territorio/" />
 </url>
 <url>
-<loc>https://cye-studio.github.io/nyos-web-demo/es/servicios/medio-ambiente/</loc>
+<loc>https://cye-studio.github.io/nyos-web-demo/es/areas/asistencia-tecnica-y-direccion-de-obra/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/asistencia-tecnica-y-direccion-de-obra/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/asistencia-tecnica-y-direccion-de-obra/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/asistencia-tecnica-y-direccion-de-obra/" />
 </url>
 <url>
-<loc>https://cye-studio.github.io/nyos-web-demo/es/servicios/project-management/</loc>
+<loc>https://cye-studio.github.io/nyos-web-demo/es/areas/calculo-de-estructuras/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/calculo-de-estructuras/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/calculo-de-estructuras/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/calculo-de-estructuras/" />
 </url>
 <url>
-<loc>https://cye-studio.github.io/nyos-web-demo/es/servicios/medios-audiovisuales/</loc>
+<loc>https://cye-studio.github.io/nyos-web-demo/es/areas/auscultacion-y-monitorizacion/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/auscultacion-y-monitorizacion/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/auscultacion-y-monitorizacion/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/auscultacion-y-monitorizacion/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/proyectos/edar-la-codosera/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/edar-la-codosera/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/proyectos/edar-la-codosera/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/edar-la-codosera/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/proyectos/edar-santa-amalia/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/edar-santa-amalia/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/proyectos/edar-santa-amalia/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/edar-santa-amalia/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/proyectos/edificio-club-de-piraguismo/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/edificio-club-de-piraguismo/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/proyectos/edificio-club-de-piraguismo/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/edificio-club-de-piraguismo/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/proyectos/gran-hotel-casino-extremadura/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/gran-hotel-casino-extremadura/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/proyectos/gran-hotel-casino-extremadura/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/gran-hotel-casino-extremadura/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/proyectos/ordenacion-hidrologico-ambiental-rio-guadiana/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/ordenacion-hidrologico-ambiental-rio-guadiana/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/proyectos/ordenacion-hidrologico-ambiental-rio-guadiana/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/ordenacion-hidrologico-ambiental-rio-guadiana/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/proyectos/ronda-norte-de-caceres/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/ronda-norte-de-caceres/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/proyectos/ronda-norte-de-caceres/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/ronda-norte-de-caceres/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/campanas/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/campanas/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/campanas/revision-depuradoras-municipales/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/revision-depuradoras-municipales/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/campanas/revision-depuradoras-municipales/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/revision-depuradoras-municipales/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/campanas/proyectos-para-convocatorias-de-ayudas/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/proyectos-para-convocatorias-de-ayudas/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/campanas/proyectos-para-convocatorias-de-ayudas/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/proyectos-para-convocatorias-de-ayudas/" />
 </url>
 <url>
 <loc>https://cye-studio.github.io/nyos-web-demo/es/campanas/estudios-de-inundabilidad/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/estudios-de-inundabilidad/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/campanas/estudios-de-inundabilidad/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/estudios-de-inundabilidad/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/es/noticias/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/noticias/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/noticias/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/noticias/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/es/noticias/plan-general-municipal-santa-marta-de-magasca/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/noticias/plan-general-municipal-santa-marta-de-magasca/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/noticias/plan-general-municipal-santa-marta-de-magasca/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/noticias/plan-general-municipal-santa-marta-de-magasca/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/areas/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/proyectos/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/proyectos/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/idi/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/idi/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/idi/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/idi/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/empresa/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/empresa/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/empresa/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/empresa/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/contacto/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/contacto/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/contacto/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/contacto/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/legal/aviso-legal/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/legal/aviso-legal/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/legal/aviso-legal/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/legal/aviso-legal/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/legal/privacidad/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/legal/privacidad/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/legal/privacidad/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/legal/privacidad/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/legal/cookies/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/legal/cookies/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/legal/cookies/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/legal/cookies/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/areas/infraestructura-ferroviaria/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/infraestructura-ferroviaria/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/infraestructura-ferroviaria/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/infraestructura-ferroviaria/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/areas/carreteras/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/carreteras/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/carreteras/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/carreteras/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/areas/agua-y-medio-ambiente/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/agua-y-medio-ambiente/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/agua-y-medio-ambiente/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/agua-y-medio-ambiente/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/areas/urbanismo-y-ordenacion-del-territorio/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/urbanismo-y-ordenacion-del-territorio/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/urbanismo-y-ordenacion-del-territorio/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/urbanismo-y-ordenacion-del-territorio/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/areas/asistencia-tecnica-y-direccion-de-obra/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/asistencia-tecnica-y-direccion-de-obra/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/asistencia-tecnica-y-direccion-de-obra/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/asistencia-tecnica-y-direccion-de-obra/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/areas/calculo-de-estructuras/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/calculo-de-estructuras/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/calculo-de-estructuras/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/calculo-de-estructuras/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/areas/auscultacion-y-monitorizacion/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/areas/auscultacion-y-monitorizacion/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/areas/auscultacion-y-monitorizacion/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/areas/auscultacion-y-monitorizacion/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/proyectos/edar-la-codosera/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/edar-la-codosera/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/proyectos/edar-la-codosera/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/edar-la-codosera/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/proyectos/edar-santa-amalia/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/edar-santa-amalia/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/proyectos/edar-santa-amalia/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/edar-santa-amalia/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/proyectos/edificio-club-de-piraguismo/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/edificio-club-de-piraguismo/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/proyectos/edificio-club-de-piraguismo/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/edificio-club-de-piraguismo/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/proyectos/gran-hotel-casino-extremadura/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/gran-hotel-casino-extremadura/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/proyectos/gran-hotel-casino-extremadura/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/gran-hotel-casino-extremadura/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/proyectos/ordenacion-hidrologico-ambiental-rio-guadiana/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/ordenacion-hidrologico-ambiental-rio-guadiana/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/proyectos/ordenacion-hidrologico-ambiental-rio-guadiana/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/ordenacion-hidrologico-ambiental-rio-guadiana/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/proyectos/ronda-norte-de-caceres/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/ronda-norte-de-caceres/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/proyectos/ronda-norte-de-caceres/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/proyectos/ronda-norte-de-caceres/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/campanas/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/campanas/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/campanas/revision-depuradoras-municipales/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/revision-depuradoras-municipales/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/campanas/revision-depuradoras-municipales/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/revision-depuradoras-municipales/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/campanas/proyectos-para-convocatorias-de-ayudas/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/proyectos-para-convocatorias-de-ayudas/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/campanas/proyectos-para-convocatorias-de-ayudas/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/proyectos-para-convocatorias-de-ayudas/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/campanas/estudios-de-inundabilidad/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/estudios-de-inundabilidad/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/campanas/estudios-de-inundabilidad/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/campanas/estudios-de-inundabilidad/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/noticias/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/noticias/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/noticias/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/noticias/" />
+</url>
+<url>
+<loc>https://cye-studio.github.io/nyos-web-demo/en/noticias/plan-general-municipal-santa-marta-de-magasca/</loc>
+<xhtml:link rel="alternate" hreflang="es" href="https://cye-studio.github.io/nyos-web-demo/es/noticias/plan-general-municipal-santa-marta-de-magasca/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://cye-studio.github.io/nyos-web-demo/en/noticias/plan-general-municipal-santa-marta-de-magasca/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://cye-studio.github.io/nyos-web-demo/es/noticias/plan-general-municipal-santa-marta-de-magasca/" />
 </url>
 </urlset>

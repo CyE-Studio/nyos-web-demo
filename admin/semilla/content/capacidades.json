@@ -1,0 +1,52 @@
+{
+  "capacidades": [
+    {
+      "clave": "dron",
+      "titulo": "Inspección aérea y captura de datos con dron",
+      "texto": "NYOS emplea sistemas aéreos no tripulados como herramienta de apoyo a la ingeniería, la inspección y el seguimiento de infraestructuras y obras. Permiten documentar zonas de difícil acceso, obtener información visual del estado y evolución de los trabajos y complementar las labores de inspección, control y diagnóstico técnico.",
+      "aplicacion": [
+        "Ferrocarril",
+        "Carreteras",
+        "Agua",
+        "Urbanismo",
+        "Asistencia técnica",
+        "Estructuras",
+        "Auscultación"
+      ]
+    },
+    {
+      "clave": "gis",
+      "titulo": "GIS y análisis territorial",
+      "texto": "Gestión, representación y análisis de información geográfica como apoyo al estudio del territorio, la planificación de actuaciones, la documentación de proyectos y el seguimiento de infraestructuras.",
+      "aplicacion": [
+        "Urbanismo",
+        "Proyectos",
+        "Estudios territoriales",
+        "Medio ambiente",
+        "Inventarios",
+        "Seguimiento de obra"
+      ]
+    },
+    {
+      "clave": "modelizacion-3d",
+      "titulo": "Modelización y representación 3D",
+      "texto": "Generación y tratamiento de modelos y representaciones tridimensionales para mejorar la comprensión técnica de las soluciones, apoyar el diseño y facilitar la comunicación de proyectos y actuaciones.",
+      "aplicacion": [
+        "Proyectos",
+        "Estructuras",
+        "Infraestructuras",
+        "Presentación técnica"
+      ]
+    },
+    {
+      "clave": "fotografia-tecnica",
+      "titulo": "Fotografía técnica y seguimiento documental de obra",
+      "texto": "Documentación gráfica ordenada de actuaciones, evolución de trabajos, incidencias y elementos singulares como apoyo a asistencias técnicas, direcciones de obra e informes.",
+      "aplicacion": [
+        "Asistencia técnica",
+        "Dirección de obra",
+        "Control y seguimiento"
+      ]
+    }
+  ]
+}

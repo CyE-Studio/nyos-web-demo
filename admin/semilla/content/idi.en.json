@@ -1,0 +1,15 @@
+{
+  "presentacion": [
+    "NYOS promotes lines of applied research and technology transfer in collaboration with the Universidad de Extremadura (UEx), particularly in structural analysis, numerical modelling, soil-structure interaction, instrumentation and experimental validation.",
+    "The aim is to turn the knowledge generated into tools, procedures and solutions that can be applied to real infrastructure."
+  ],
+  "lineas": [
+    "2D and 3D models",
+    "Numerical verification and validation",
+    "Instrumentation and sensors",
+    "Scale-model tests",
+    "Monitoring protocols",
+    "Development of in-house tools",
+    "Transfer to real projects"
+  ]
+}

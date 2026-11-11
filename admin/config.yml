@@ -23,10 +23,13 @@ output:
     quote: double
     indent_sequences: true
 
-# Archivos content/<colección>/<slug>.es.mdx: un archivo por idioma, hoy solo español.
+# Archivos content/<colección>/<slug>.<idioma>.mdx: un archivo por idioma, con el mismo nombre (slug) en
+# todos. Los idiomas son los de i18n/routing.ts. En cada campo, `i18n: true` es un texto que se traduce
+# y `i18n: duplicate` un dato que es el mismo en todos los idiomas (coordenadas, fechas, listas
+# cerradas): se rellena una vez, en español, y el panel lo copia a los demás archivos.
 i18n:
   structure: multiple_files
-  locales: [es]
+  locales: [es, en]
   default_locale: es
 
 media_folder: /public/proyectos
@@ -53,41 +56,80 @@ collections:
       - name: coords
         label: Coordenadas del municipio
         widget: object
-        i18n: true
+        i18n: duplicate
         collapsed: auto
         summary: "{{lat}}, {{lng}}"
         fields:
           - { name: lat, label: Latitud, widget: number, value_type: float, min: -90, max: 90, step: 0.0001, hint: "Ej.: 39.47" }
           - { name: lng, label: Longitud, widget: number, value_type: float, min: -180, max: 180, step: 0.0001, hint: "Ej.: -6.37 (oeste, en negativo)" }
           - { name: precision, label: Precisión, widget: select, default: municipio, options: [{ label: "Centro del municipio", value: municipio }, { label: "Punto exacto de la obra", value: exacta }] }
-      - name: areas
-        label: Áreas
+      - name: origen
+        label: De quién es el trabajo
         widget: select
-        i18n: true
+        i18n: duplicate
+        hint: "Decide en qué bloque del listado sale."
+        options:
+          - { label: "Proyecto de NYOS", value: nyos }
+          - { label: "Experiencia previa del equipo", value: equipo }
+      - name: sectores
+        label: Sector
+        widget: select
+        i18n: duplicate
+        required: false
         multiple: true
-        min: 1
-        options: &areas
-          - { label: "Ingeniería civil", value: ingenieria-civil }
+        hint: "Es el primer filtro del listado."
+        options:
+          - { label: "Ferrocarril", value: ferrocarril }
+          - { label: "Carreteras", value: carreteras }
           - { label: "Agua", value: agua }
-          - { label: "Arquitectura", value: arquitectura }
-          - { label: "Urbanismo", value: urbanismo }
           - { label: "Medio ambiente", value: medio-ambiente }
-          - { label: "Project management", value: project-management }
-          - { label: "Medios audiovisuales", value: medios-audiovisuales }
-      - { name: cliente, label: Cliente o promotor, widget: string, i18n: true, required: false, hint: "Si no se puede publicar, dejarlo en blanco." }
-      - { name: anio, label: Año, widget: number, i18n: true, required: false, value_type: int, min: 1900, max: 2100 }
-      - name: rol
-        label: Papel de Nyos
+          - { label: "Urbanismo", value: urbanismo }
+          - { label: "Estructuras", value: estructuras }
+      - name: etiquetas
+        label: Etiquetas técnicas
         widget: select
-        i18n: true
+        i18n: duplicate
+        required: false
+        multiple: true
+        options:
+          - { label: "Dron", value: dron }
+          - { label: "GIS", value: gis }
+          - { label: "Modelización 3D", value: modelizacion-3d }
+          - { label: "Fotografía técnica", value: fotografia-tecnica }
+          - { label: "Instrumentación", value: instrumentacion }
+          - { label: "Sensores", value: sensores }
+      - name: areas
+        label: Áreas relacionadas
+        widget: select
+        i18n: duplicate
+        required: false
+        multiple: true
+        hint: "La obra aparece en la página de cada área marcada."
+        options: &areas
+          - { label: "Infraestructura ferroviaria", value: infraestructura-ferroviaria }
+          - { label: "Carreteras e infraestructuras viarias", value: carreteras }
+          - { label: "Agua y medio ambiente", value: agua-y-medio-ambiente }
+          - { label: "Urbanismo y ordenación del territorio", value: urbanismo-y-ordenacion-del-territorio }
+          - { label: "Asistencia técnica, dirección de obra y CSS", value: asistencia-tecnica-y-direccion-de-obra }
+          - { label: "Cálculo de estructuras", value: calculo-de-estructuras }
+          - { label: "Auscultación y monitorización", value: auscultacion-y-monitorizacion }
+      - { name: cliente, label: Cliente o promotor, widget: string, i18n: true, required: false, hint: "Si no se puede publicar, dejarlo en blanco." }
+      - { name: anio, label: Año, widget: number, i18n: duplicate, required: false, value_type: int, min: 1900, max: 2100 }
+      - { name: alcance, label: Alcance, widget: text, i18n: true, required: false, hint: "Qué hizo NYOS, en una o dos frases. Ej.: Redacción del proyecto y asistencia técnica a la Dirección de Obra." }
+      - name: rol
+        label: Papel de Nyos (servicio prestado)
+        widget: select
+        i18n: duplicate
         multiple: true
         min: 1
         options:
           - { label: "Proyecto", value: proyecto }
+          - { label: "Planeamiento urbanístico", value: planeamiento-urbanistico }
           - { label: "Asistencia técnica", value: asistencia-tecnica }
           - { label: "Dirección de obra", value: direccion-de-obra }
-          - { label: "Coordinación de seguridad y salud", value: coordinacion-seguridad-salud }
-          - { label: "Project management", value: project-management }
+          - { label: "Coordinación de seguridad y salud (CSS)", value: coordinacion-seguridad-salud }
+          - { label: "Control", value: control }
+          - { label: "Auscultación", value: auscultacion }
       - name: datosClave
         label: Datos clave
         label_singular: Dato
@@ -134,7 +176,7 @@ collections:
       - name: planoSvg
         label: Esquema dibujado
         widget: select
-        i18n: true
+        i18n: duplicate
         required: false
         hint: "Solo para las obras que tienen dibujo propio. Las nuevas se dejan en blanco."
         options:
@@ -144,8 +186,8 @@ collections:
           - { label: "Río Guadiana", value: rio-guadiana }
           - { label: "EDAR Santa Amalia", value: edar-santa-amalia }
           - { label: "Gran Hotel Casino", value: gran-hotel-casino }
-      - { name: planoConfirmado, label: El dibujo es el plano real, widget: boolean, i18n: true, default: false, hint: "Solo si Nyos ha entregado la geometría y el dibujo la reproduce." }
-      - { name: destacado, label: Destacada en la portada, widget: boolean, i18n: true, default: false }
+      - { name: planoConfirmado, label: El dibujo es el plano real, widget: boolean, i18n: duplicate, default: false, hint: "Solo si Nyos ha entregado la geometría y el dibujo la reproduce." }
+      - { name: destacado, label: Destacada en la portada, widget: boolean, i18n: duplicate, default: false }
       - name: seo
         label: Buscadores
         widget: object
@@ -173,10 +215,10 @@ collections:
     fields:
       - { name: titulo, label: Título, widget: string, i18n: true }
       - { name: resumen, label: Resumen, widget: text, i18n: true, hint: "Dos frases: qué se ofrece y para qué sirve." }
-      - { name: inicio, label: Empieza el, widget: datetime, i18n: true, type: date }
-      - { name: fin, label: Termina el, widget: datetime, i18n: true, type: date }
+      - { name: inicio, label: Empieza el, widget: datetime, i18n: duplicate, type: date }
+      - { name: fin, label: Termina el, widget: datetime, i18n: duplicate, type: date }
       - { name: paraQuien, label: A quién va dirigida, widget: list, i18n: true, min: 1, field: { name: perfil, label: Perfil, widget: string }, hint: "Ej.: Ayuntamientos y mancomunidades" }
-      - { name: areas, label: Áreas, widget: select, i18n: true, multiple: true, min: 1, options: *areas }
+      - { name: areas, label: Áreas, widget: select, i18n: duplicate, multiple: true, min: 1, options: *areas }
       - name: imagen
         label: Imagen
         widget: object
@@ -187,7 +229,7 @@ collections:
           - { name: src, label: Imagen, widget: image }
           - { name: alt, label: Descripción de la imagen, widget: string }
           - { name: tipo, label: Tipo, widget: select, default: foto, options: [{ label: Foto, value: foto }, { label: Render, value: render }] }
-      - { name: ejemplo, label: Es un ejemplo de la demo, widget: boolean, i18n: true, default: false, hint: "Marcado, no se publica en la web real." }
+      - { name: ejemplo, label: Es un ejemplo de la demo, widget: boolean, i18n: duplicate, default: false, hint: "Marcado, no se publica en la web real." }
       - name: seo
         label: Buscadores
         widget: object
@@ -199,9 +241,9 @@ collections:
       - { name: body, label: Texto de la campaña, widget: markdown, i18n: true, hint: "Qué incluye y cómo se pide." }
 
   - name: noticias
-    label: Noticias
+    label: Actualidad
     label_singular: Noticia
-    description: Sin noticias, el apartado no aparece en la web.
+    description: Sale en la portada y en el pie. Sin noticias, el apartado no aparece en la web.
     folder: /content/noticias
     extension: mdx
     format: yaml-frontmatter
@@ -215,7 +257,8 @@ collections:
     public_folder: /noticias
     fields:
       - { name: titulo, label: Título, widget: string, i18n: true }
-      - { name: fecha, label: Fecha, widget: datetime, i18n: true, type: date }
+      - { name: fecha, label: Fecha, widget: datetime, i18n: duplicate, type: date }
+      - { name: ejemplo, label: Es un ejemplo de la demo, widget: boolean, i18n: duplicate, default: false, hint: "Marcado, no se publica en la web real." }
       - { name: resumen, label: Resumen, widget: text, i18n: true }
       - name: imagen
         label: Imagen
@@ -238,9 +281,9 @@ collections:
       - { name: body, label: Texto de la noticia, widget: markdown, i18n: true }
 
   - name: servicios
-    label: Servicios
-    label_singular: Servicio
-    description: Las siete áreas. No se crean ni se borran desde aquí; sí se editan sus textos.
+    label: Áreas
+    label_singular: Área
+    description: Las siete áreas de actividad. No se crean ni se borran desde aquí; sí se editan sus textos.
     folder: /content/servicios
     extension: mdx
     format: yaml-frontmatter
@@ -250,12 +293,12 @@ collections:
     summary: "{{orden}}. {{titulo}}"
     sortable_fields: [orden]
     fields:
-      - { name: orden, label: Orden, widget: number, i18n: true, value_type: int, min: 1, max: 20 }
+      - { name: orden, label: Orden, widget: number, i18n: duplicate, value_type: int, min: 1, max: 20 }
       - { name: titulo, label: Título, widget: string, i18n: true }
       - { name: resumen, label: Resumen, widget: text, i18n: true }
-      - { name: icono, label: Icono, widget: select, i18n: true, options: *areas, hint: "No cambiar: es el dibujo del servicio." }
+      - { name: icono, label: Icono, widget: select, i18n: duplicate, options: *areas, hint: "No cambiar: es el dibujo del servicio." }
       - { name: prestaciones, label: Qué incluye, widget: list, i18n: true, min: 1, field: { name: prestacion, label: Prestación, widget: string } }
-      - { name: paraQuien, label: Perfiles habituales, widget: list, i18n: true, min: 1, field: { name: perfil, label: Perfil, widget: string } }
+      - { name: paraQuien, label: Perfiles habituales, widget: list, i18n: true, required: false, field: { name: perfil, label: Perfil, widget: string }, hint: "En blanco, el bloque no aparece." }
       - name: faq
         label: Preguntas frecuentes del servicio
         label_singular: Pregunta
@@ -267,7 +310,7 @@ collections:
         fields:
           - { name: pregunta, label: Pregunta, widget: string }
           - { name: respuesta, label: Respuesta, widget: text }
-      - { name: proyectosRelacionados, label: Obras destacadas (por orden), widget: relation, i18n: true, required: false, multiple: true, collection: proyectos, value_field: "{{slug}}", display_fields: ["{{titulo}}"], search_fields: [titulo, municipio], hint: "En blanco, salen todas las obras del área." }
+      - { name: proyectosRelacionados, label: Obras destacadas (por orden), widget: relation, i18n: duplicate, required: false, multiple: true, collection: proyectos, value_field: "{{slug}}", display_fields: ["{{titulo}}"], search_fields: [titulo, municipio], hint: "En blanco, salen todas las obras del área." }
       - name: seo
         label: Buscadores
         widget: object
@@ -276,7 +319,7 @@ collections:
         fields:
           - { name: title, label: Título en Google, widget: string, pattern: ["^.{1,60}$", "Como mucho 60 caracteres"] }
           - { name: description, label: Descripción en Google, widget: text, pattern: ["^.{140,160}$", "Entre 140 y 160 caracteres"] }
-      - { name: body, label: Texto del servicio, widget: markdown, i18n: true }
+      - { name: body, label: Texto del área, widget: markdown, i18n: true }
 
   - name: legal
     label: Textos legales
@@ -301,7 +344,7 @@ collections:
 
   - name: datos
     label: Datos de la empresa
-    description: Ficha societaria, cifras y preguntas frecuentes generales.
+    description: Ficha societaria, cifras y preguntas frecuentes generales. Las entradas «(inglés)» llevan solo los textos que cambian; el resto sale de la entrada en español.
     files:
       - name: empresa
         label: Empresa
@@ -339,6 +382,89 @@ collections:
               - { name: url, label: Dirección, widget: string, pattern: ["^https://", "Tiene que empezar por https://"] }
           - { name: presentacion, label: Quiénes somos, widget: list, min: 1, field: { name: parrafo, label: Párrafo, widget: text } }
           - { name: politicaGestion, label: Política de Gestión Integrada, widget: list, min: 1, field: { name: parrafo, label: Párrafo, widget: text } }
+      - name: empresa-en
+        label: Empresa (inglés)
+        file: /content/empresa.en.json
+        description: "Solo los textos que cambian en inglés. Lo que se deje en blanco sale como en «Empresa»: CIF, teléfono, correo y año se escriben allí una sola vez."
+        fields:
+          - { name: eslogan, label: Eslogan, widget: string, required: false, hint: "En blanco, se usa el texto en español." }
+          - { name: horario, label: Horario de atención, widget: string, required: false, hint: "En blanco, se usa el texto en español." }
+          - { name: certificaciones, label: Certificaciones, widget: list, required: false, field: { name: certificacion, label: Certificación, widget: string }, hint: "En blanco, se usa el texto en español." }
+          - name: equipo
+            label: Equipo
+            label_singular: Persona
+            widget: list
+            required: false
+            collapsed: auto
+            summary: "{{nombre}} · {{cargo}}"
+            hint: "Si se rellena, sustituye a la lista entera en español: hay que poner a todas las personas, con el cargo en inglés."
+            fields:
+              - { name: nombre, label: Nombre, widget: string }
+              - { name: cargo, label: Cargo, widget: string }
+          - { name: presentacion, label: Quiénes somos, widget: list, required: false, field: { name: parrafo, label: Párrafo, widget: text } }
+          - { name: politicaGestion, label: Política de Gestión Integrada, widget: list, required: false, field: { name: parrafo, label: Párrafo, widget: text } }
+      - name: capacidades
+        label: Capacidades transversales
+        file: /content/capacidades.json
+        fields:
+          - name: capacidades
+            label: Capacidades
+            label_singular: Capacidad
+            widget: list
+            collapsed: auto
+            summary: "{{titulo}}"
+            hint: "Salen en la página de Áreas."
+            fields:
+              - name: clave
+                label: Etiqueta
+                widget: select
+                options:
+                  - { label: "Dron", value: dron }
+                  - { label: "GIS", value: gis }
+                  - { label: "Modelización 3D", value: modelizacion-3d }
+                  - { label: "Fotografía técnica", value: fotografia-tecnica }
+              - { name: titulo, label: Título, widget: string }
+              - { name: texto, label: Texto, widget: text }
+              - { name: aplicacion, label: Aplicación habitual, widget: list, min: 1, field: { name: ambito, label: Ámbito, widget: string } }
+      - name: capacidades-en
+        label: Capacidades transversales (inglés)
+        file: /content/capacidades.en.json
+        description: "La lista en inglés sustituye entera a la española: tiene que llevar las mismas capacidades, con la misma etiqueta."
+        fields:
+          - name: capacidades
+            label: Capacidades
+            label_singular: Capacidad
+            widget: list
+            required: false
+            collapsed: auto
+            summary: "{{titulo}}"
+            fields:
+              - name: clave
+                label: Etiqueta
+                widget: select
+                options:
+                  - { label: "Dron", value: dron }
+                  - { label: "GIS", value: gis }
+                  - { label: "Modelización 3D", value: modelizacion-3d }
+                  - { label: "Fotografía técnica", value: fotografia-tecnica }
+              - { name: titulo, label: Título, widget: string }
+              - { name: texto, label: Texto, widget: text }
+              - { name: aplicacion, label: Aplicación habitual, widget: list, min: 1, field: { name: ambito, label: Ámbito, widget: string } }
+      - name: idi
+        label: I+D+i
+        file: /content/idi.json
+        fields:
+          - { name: presentacion, label: Presentación, widget: list, min: 1, field: { name: parrafo, label: Párrafo, widget: text } }
+          - { name: lineas, label: Qué recoge la sección, widget: list, required: false, field: { name: linea, label: Línea, widget: string } }
+          - { name: areasRelacionadas, label: Áreas relacionadas, widget: select, required: false, multiple: true, options: *areas }
+          - { name: proyectos, label: Proyectos de investigación aplicada, widget: relation, required: false, multiple: true, collection: proyectos, value_field: "{{slug}}", display_fields: ["{{titulo}}"], search_fields: [titulo, municipio], hint: "Proyectos con la UEx o de transferencia. En blanco, el bloque no aparece." }
+      - name: idi-en
+        label: I+D+i (inglés)
+        file: /content/idi.en.json
+        description: "Solo los textos. Las áreas relacionadas se eligen en «I+D+i» y valen para los dos idiomas."
+        fields:
+          - { name: presentacion, label: Presentación, widget: list, required: false, field: { name: parrafo, label: Párrafo, widget: text } }
+          - { name: lineas, label: Qué recoge la sección, widget: list, required: false, field: { name: linea, label: Línea, widget: string } }
       - name: cifras
         label: Cifras
         file: /content/cifras.json
@@ -360,6 +486,21 @@ collections:
       - name: faq
         label: Preguntas frecuentes
         file: /content/faq.json
+        fields:
+          - name: preguntas
+            label: Preguntas
+            label_singular: Pregunta
+            widget: list
+            required: false
+            collapsed: auto
+            summary: "{{pregunta}}"
+            fields:
+              - { name: pregunta, label: Pregunta, widget: string }
+              - { name: respuesta, label: Respuesta, widget: text }
+      - name: faq-en
+        label: Preguntas frecuentes (inglés)
+        file: /content/faq.en.json
+        description: "La lista en inglés sustituye entera a la española."
         fields:
           - name: preguntas
             label: Preguntas
