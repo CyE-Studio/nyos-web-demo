@@ -1,40 +1,25 @@
-1:"$Sreact.fragment"
-2:"/nyos-web-demo/_next/static/chunks/1zl1kl5jd72wn.js"
-3:I[52878,["$2"],""]
-:HL["/nyos-web-demo/_next/static/chunks/1mpiul9i-wwzb.css","style"]
-e:X
-12:X
-12:C
-13:[["children",{"s":"__PAGE__","h":160,"d":{"r":"$L14","p":"$@15","v":null,"s":"$e"}}]]
-f:[["children",{"s":"/_not-found","h":96,"d":{"r":"$L10","p":"$@11","v":"$12","s":"$e"},"c":"$Q13"}]]
-0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/nyos-web-demo/_next/static/chunks/1mpiul9i-wwzb.css","precedence":"next"}],["$","script","script-0",{"src":"/nyos-web-demo/_next/static/chunks/1zl1kl5jd72wn.js","async":true}]],["$","html",null,{"lang":"es","className":"daj0mW_variable -VQajq_variable","suppressHydrationWarning":true,"children":["$","body",null,{"children":[["$","main",null,{"children":[["$","div","es",{"lang":"es","data-idioma":"es","data-titulo":"Página no encontrada | Nyos Consulting","hidden":false,"suppressHydrationWarning":true,"children":["$","div",null,{"className":"cuadricula flex flex-col min-h-dvh","children":[["$","div",null,{"className":"contenedor pt-6","children":["$","$L3",null,{"href":"/es","className":"inline-flex min-h-11 items-center gap-2","children":[["$","svg",null,{"viewBox":"0 0 32 64","aria-hidden":"true","className":"h-8 w-4 shrink-0","children":[["$","defs",null,{"children":[["$","linearGradient",null,{"id":"marca-404-es-hoja","x1":"0","y1":"0","x2":"0","y2":"1","children":[["$","stop",null,{"offset":"0","stopColor":"#a8d000"}],["$","stop",null,{"offset":"0.55","stopColor":"#8ccf7a"}],["$","stop",null,{"offset":"1","stopColor":"#3db4e5"}]]}],["$","linearGradient",null,{"id":"marca-404-es-sombra","x1":"0","y1":"0","x2":"1","y2":"0","children":[["$","stop",null,{"offset":"0","stopColor":"#000","stopOpacity":"0.22"}],["$","stop",null,{"offset":"0.5","stopColor":"#000","stopOpacity":"0"}]]}]]}],["$","path",null,{"d":"M16 2 26 11.5 C19.5 24 17.5 40 17.5 64 H14.5 C14.5 40 12.5 24 6 11.5 Z","fill":"url(#marca-404-es-hoja)"}],["$","path",null,{"d":"M16 2 6 11.5 C12.5 24 14.5 40 14.5 64 H16 Z","fill":"url(#marca-404-es-sombra)"}]]}],["$","span",null,{"className":"text-h5 lowercase","children":[["$","span",null,{"className":"font-medium tracking-tight","children":"nyos"}],["$","span",null,{"className":"ml-1.5 font-normal tracking-wide text-tinta-2 max-[479px]:sr-only","children":"consulting"}]]}]]}]}],["$","div",null,{"className":"contenedor flex flex-1 flex-col justify-center py-seccion","children":[["$","p",null,{"className":"dato text-tinta-2","children":"Error 404"}],["$","h1",null,{"className":"mt-4","children":"Página no encontrada"}],["$","p",null,{"className":"mt-6 max-w-texto text-lead text-tinta-2","children":"La dirección no existe o ha cambiado. Puedes seguir por una de estas secciones."}],["$","div",null,{"className":"mt-8","children":["$","$L3",null,{"href":"/es","className":"group inline-flex items-center gap-2 font-medium whitespace-nowrap transition-colors duration-150 ease-plano h-control px-5 text-body bg-cta text-cta-tinta border border-cta-borde hover:bg-cta-hover ","children":["Ir al inicio",["$","svg",null,{"viewBox":"0 0 16 16","fill":"none","stroke":"currentColor","strokeWidth":"1.5","aria-hidden":"true","className":"size-4 shrink-0 transition-transform duration-150 ease-plano group-hover:translate-x-1","children":["$","path",null,{"d":"M1 8h13M9 3l5 5-5 5"}]}]]}]}],["$","nav",null,{"aria-label":"Secciones de la web","className":"mt-8","children":["$","ul",null,{"className":"flex flex-wrap gap-x-6","children":[["$","li","/es/areas",{"children":["$","$L3",null,{"href":"/es/areas","className":"inline-flex min-h-11 items-center text-acento underline decoration-1 underline-offset-4 hover:text-acento-hover","children":"Áreas"}]}],["$","li","/es/proyectos",{"children":["$","$L3",null,{"href":"/es/proyectos","className":"inline-flex min-h-11 items-center text-acento underline decoration-1 underline-offset-4 hover:text-acento-hover","children":"Proyectos"}]}],["$","li","/es/contacto",{"children":["$","$L3",null,{"href":"/es/contacto","className":"inline-flex min-h-11 items-center text-acento underline decoration-1 underline-offset-4 hover:text-acento-hover","children":"Contacto"}]}]]}]}]]}]]}]}],["$","div","en",{"lang":"en","data-idioma":"en","data-titulo":"Page not found | Nyos Consulting","hidden":true,"suppressHydrationWarning":true,"children":["$","div",null,{"className":"cuadricula flex flex-col min-h-dvh","children":[["$","div",null,{"className":"contenedor pt-6","children":["$","$L3",null,{"href":"/en","className":"inline-flex min-h-11 items-center gap-2","children":[["$","svg",null,{"viewBox":"0 0 32 64","aria-hidden":"true","className":"h-8 w-4 shrink-0","children":[["$","defs",null,{"children":[["$","linearGradient",null,{"id":"marca-404-en-hoja","x1":"0","y1":"0","x2":"0","y2":"1","children":["$L4","$L5","$L6"]}],"$L7"]}],"$L8","$L9"]}],"$La"]}]}],"$Lb"]}]}]]}],"$Lc"]}]}]]}],"p":"$@d","v":null,"s":"$e"},"c":"$Qf"},"h":{"r":"$L16","p":"$@17","v":null,"s":"$e"}},"a":"$@18","u":"$@19","b":"Nw_PXUgiieWkt5CygFoOM"}
-1a:I[1474,["$2"],"default"]
-1b:I[19895,["$2"],"default"]
-1c:I[88995,["$2"],"OutletBoundary"]
-1d:"$Sreact.suspense"
-1f:"ViewportBoundary"
-20:I[88995,["$2"],"$1f"]
-21:"MetadataBoundary"
-22:I[88995,["$2"],"$21"]
-23:I[94519,["$2"],"IconMark"]
-4:["$","stop",null,{"offset":"0","stopColor":"#a8d000"}]
-5:["$","stop",null,{"offset":"0.55","stopColor":"#8ccf7a"}]
-6:["$","stop",null,{"offset":"1","stopColor":"#3db4e5"}]
-7:["$","linearGradient",null,{"id":"marca-404-en-sombra","x1":"0","y1":"0","x2":"1","y2":"0","children":[["$","stop",null,{"offset":"0","stopColor":"#000","stopOpacity":"0.22"}],["$","stop",null,{"offset":"0.5","stopColor":"#000","stopOpacity":"0"}]]}]
-8:["$","path",null,{"d":"M16 2 26 11.5 C19.5 24 17.5 40 17.5 64 H14.5 C14.5 40 12.5 24 6 11.5 Z","fill":"url(#marca-404-en-hoja)"}]
-9:["$","path",null,{"d":"M16 2 6 11.5 C12.5 24 14.5 40 14.5 64 H16 Z","fill":"url(#marca-404-en-sombra)"}]
-a:["$","span",null,{"className":"text-h5 lowercase","children":[["$","span",null,{"className":"font-medium tracking-tight","children":"nyos"}],["$","span",null,{"className":"ml-1.5 font-normal tracking-wide text-tinta-2 max-[479px]:sr-only","children":"consulting"}]]}]
-b:["$","div",null,{"className":"contenedor flex flex-1 flex-col justify-center py-seccion","children":[["$","p",null,{"className":"dato text-tinta-2","children":"Error 404"}],["$","h1",null,{"className":"mt-4","children":"Page not found"}],["$","p",null,{"className":"mt-6 max-w-texto text-lead text-tinta-2","children":"The address does not exist or has changed. You can carry on from one of these sections."}],["$","div",null,{"className":"mt-8","children":["$","$L3",null,{"href":"/en","className":"group inline-flex items-center gap-2 font-medium whitespace-nowrap transition-colors duration-150 ease-plano h-control px-5 text-body bg-cta text-cta-tinta border border-cta-borde hover:bg-cta-hover ","children":["Go to the home page",["$","svg",null,{"viewBox":"0 0 16 16","fill":"none","stroke":"currentColor","strokeWidth":"1.5","aria-hidden":"true","className":"size-4 shrink-0 transition-transform duration-150 ease-plano group-hover:translate-x-1","children":["$","path",null,{"d":"M1 8h13M9 3l5 5-5 5"}]}]]}]}],["$","nav",null,{"aria-label":"Website sections","className":"mt-8","children":["$","ul",null,{"className":"flex flex-wrap gap-x-6","children":[["$","li","/en/areas",{"children":["$","$L3",null,{"href":"/en/areas","className":"inline-flex min-h-11 items-center text-acento underline decoration-1 underline-offset-4 hover:text-acento-hover","children":"Areas"}]}],["$","li","/en/proyectos",{"children":["$","$L3",null,{"href":"/en/proyectos","className":"inline-flex min-h-11 items-center text-acento underline decoration-1 underline-offset-4 hover:text-acento-hover","children":"Projects"}]}],["$","li","/en/contacto",{"children":["$","$L3",null,{"href":"/en/contacto","className":"inline-flex min-h-11 items-center text-acento underline decoration-1 underline-offset-4 hover:text-acento-hover","children":"Contact"}]}]]}]}]]}]
-c:["$","script",null,{"dangerouslySetInnerHTML":{"__html":"(function(){var d=document,m=location.pathname.slice(14).match(/^\\/(en)(\\/|$)/);if(!m)return;d.documentElement.lang=m[1];d.querySelectorAll(\"[data-idioma]\").forEach(function(n){n.hidden=n.dataset.idioma!==m[1];if(!n.hidden){var t=n.dataset.titulo;d.title=t;new MutationObserver(function(){if(d.title!==t)d.title=t}).observe(d.head,{childList:true,subtree:true,characterData:true})}})})()"}}]
-10:["$","$1","c",{"children":[null,["$","$L1a",null,{"parallelRouterKey":"children","template":["$","$L1b",null,{}]}]]}]
-14:["$","$1","c",{"children":[null,null,["$","$L1c",null,{"children":["$","$1d",null,{"name":"Next.MetadataOutlet","children":"$@1e"}]}]]}]
-16:["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L20",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L22",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1d",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Página no encontrada | Nyos Consulting"}],["$","meta","1",{"name":"robots","content":"noindex, nofollow"}],["$","link","2",{"rel":"icon","href":"/nyos-web-demo/icon.png?icon.3g6nehw83tg1-.png","sizes":"512x512","type":"image/png"}],["$","link","3",{"rel":"icon","href":"/nyos-web-demo/icon.svg?icon.1mab70c5ncsea.svg","sizes":"any","type":"image/svg+xml"}],["$","$L23","4",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
-1e:null
-19:true
-e:300
-e:C
-18:0
-11:"$undefined"
-17:"$undefined"
-15:"$undefined"
+2:"$Sreact.fragment"
+3:"/nyos-web-demo/_next/static/chunks/1zl1kl5jd72wn.js"
+4:I[1474,["$3"],"default"]
+5:I[19895,["$3"],"default"]
+a:I[88995,["$3"],"OutletBoundary"]
+b:"$Sreact.suspense"
+e:"ViewportBoundary"
+f:I[88995,["$3"],"$e"]
+10:"MetadataBoundary"
+11:I[88995,["$3"],"$10"]
+12:I[94519,["$3"],"IconMark"]
+7:X
+7:C
+8:X
+9:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[null,null,["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]]}],"p":"$@d","v":null,"s":"$8"}}]]
+1:[["children",{"s":"/_not-found","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}],"p":"$@6","v":"$7","s":"$8"},"c":"$Q9"}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$Lf",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L11",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$b",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Página no encontrada | Nyos Consulting"}],["$","meta","1",{"name":"robots","content":"noindex, nofollow"}],["$","link","2",{"rel":"icon","href":"/nyos-web-demo/icon.png?icon.0_rp7h6uyulo_.png","sizes":"512x512","type":"image/png"}],["$","link","3",{"rel":"icon","href":"/nyos-web-demo/icon.svg?icon.05sy7klimkgak.svg","sizes":"any","type":"image/svg+xml"}],["$","$L12","4",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@13","v":null,"s":"$8"}},"a":"$@14","u":"$@15","b":"TjSNyOKZfTpKGqSPPC7_l"}
+c:null
+15:true
+8:300
+8:C
+14:0
+6:"$undefined"
+13:"$undefined"
 d:"$undefined"
